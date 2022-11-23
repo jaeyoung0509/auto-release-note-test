@@ -1,0 +1,15 @@
+name-template: "v$NEXT_MINOR_VERSION"
+tag-template: "v$NEXT_MINOR_VERSION"
+categories:
+  - title: "Feautre"
+    labels:
+      - "publish"
+
+exclude-categories:
+  -"backend"
+
+change-template: "- $TITLE (#$NUMBER)"
+cgange-title-escapes: '\<*_&'
+template: |
+  ## changes 
+  $CHANGES
